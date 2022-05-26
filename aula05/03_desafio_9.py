@@ -4,6 +4,7 @@
 
 # Dica: Python oferece recursos mais interessantes para trabalhar com strings, como aspas triplas que permitem escrever
 # longos textos mais facilmente. Elas funcionam como as aspas, mas permitem digitar a mensagem em várias linhas.
+
 everlong_foo_fighters = """
 Hello
 I've waited here for you
@@ -44,4 +45,7 @@ The only thing I'll ever ask of you
 You've got to promise not to stop when I say when
 """
 
+split_everlong = everlong_foo_fighters.split()
+each_word_everlong = sorted(set(split_everlong))
+print(each_word_everlong)
 
